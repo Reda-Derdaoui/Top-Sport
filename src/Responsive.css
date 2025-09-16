@@ -1,0 +1,74 @@
+  @media (max-width: 97.18rem) {
+      /* 1555px /16px = 97.18rem   */
+
+      html {
+          font-size: 56%;
+          /* 9px / 16px = 56.25% */
+      }
+  }
+
+
+  @media (max-width: 93.75rem) {
+      /* 1500px / 16px = 93.75rem */
+
+      html {
+          font-size: 50%;
+          /* 8px /16px = 50% */
+      }
+
+  }
+
+  @media (max-width: 84.375rem) {
+      /* 1350px / 16px = 84.375rem */
+
+      html {
+          font-size: 43.75% ;
+          /* 7px / 16px = 43.75% */
+      }
+  }
+
+  @media (max-width:62.5rem) {
+      /* 1000px / 16px = 62.5rem */
+
+      html {
+          font-size: 31.25%;
+          /* 6px / 16px = 31.25% */
+      }
+
+  }
+
+  @media (max-width:50rem) {
+      /* 800px / 16px = 50rem */
+
+      html {
+          font-size: 25%;
+          /* 4px / 16px = 25% */
+      }
+
+      /* .parent-4 {
+        flex-direction: column;
+        gap: 4rem;
+      } */
+
+  }
+
+
+  @media (max-width : 34.375rem) {
+      /* 550px / 16px = 34.375rem  */
+
+      html {
+          font-size: 18.57%;
+          /* 3px / 16px = 18.57%  */
+      }
+
+  }
+
+
+  @media (max-width :25.625rem) {
+      /* 410px / 16px = 25.625rem */
+
+      html {
+          font-size: 12.5%;
+          /* 2px / 16px = 12.5% */
+      }
+  }
