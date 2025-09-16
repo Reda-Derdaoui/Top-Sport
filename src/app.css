@@ -136,7 +136,7 @@ ul {
 .title-marg {
     font-size: 8rem;
     text-align: center;
-    color: #0A2240;
+    color: white;
     transition: 0.5s;
 }
 
@@ -144,18 +144,18 @@ ul {
     font-size: 3rem;
     font-weight: 500;
     letter-spacing: var(--letter-spacing);
-    color: #0A2240;
+    color: white;
     transition: 0.5s;
 }
 
-.title-marg:hover,
+/* .title-marg:hover,
 .better:hover {
     background-color: #cfcfcf;
     color: #000000;
     border-radius: 9px;
     padding: 5px;
     transform: scale(1.05, 1.05);
-}
+} */
 
 a {
     text-decoration: none;
@@ -245,6 +245,10 @@ a {
     background-size: cover;
     height: 100vh;
     background-position: center center;
+}
+
+.karate-title {
+    padding-top: 6rem;
 }
 
 .p-container {
