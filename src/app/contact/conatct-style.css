@@ -13,7 +13,12 @@ body {
     align-items: center;
     background-color: #0b78d0;
     box-sizing: border-box;
-    height: 100vh;
+}
+
+.home-image {
+    position: relative;
+    height: 80px;
+    bottom: 25px;
 }
 
 .global {
@@ -27,6 +32,7 @@ body {
     padding: 50px 50px;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+    margin: 90px;
 }
 
 .home-page {
