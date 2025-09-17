@@ -16,7 +16,6 @@
     background-color: #0b78d0;
     box-sizing: border-box;
     height: 100vh;
-
 }
 
 .bord {
@@ -32,10 +31,10 @@
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
 }
 
-.home-page img  {
+.home-page img {
     position: relative;
-    width: 3rem;
-    left: -25%;
+    height: 90px;
+    left: 50px;
     bottom: 2rem;
 }
 
@@ -72,7 +71,7 @@ a {
 }
 
 .links-visited:visited {
-    color: #0b78d0 ;
+    color: #0b78d0;
 }
 
 ul {
