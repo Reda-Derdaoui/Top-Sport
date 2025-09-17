@@ -43,11 +43,11 @@ body {
     margin-bottom: 20px;
 }
 
-.home-page {
+.home-page img {
     position: relative;
-    width: 2.5rem;
-    left: -55%;
+    right: 5px;
     bottom: 2rem;
+    height: 90px;
 }
 
 .parag {
