@@ -285,6 +285,12 @@ a {
     margin-bottom: 5rem;
 }
 
+.first-2,
+.first-4 {
+    flex-direction: row-reverse;
+}
+
+
 .reda-img,
 .hamza-img,
 .taha-img,
@@ -304,6 +310,7 @@ a {
     width: 40rem;
     font-size: var(--font-size);
 }
+
 
 .links-visited:visited {
     color: var(--2eme-color);
