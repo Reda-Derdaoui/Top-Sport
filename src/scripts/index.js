@@ -9,8 +9,9 @@ athletes.forEach((athlete) => {
     athleteElements += `
         <div class="athelet-container">
             <div class="${athlete.parent}">
+               <div>
                 <img class="reda-img" src="${athlete.image}" alt="reda">
-
+               </div>
                 <div class="${athlete.class}">
                     <h1 class="h1">${athlete.name}</h1>
                     <p class="p">${athlete.description}. <a class="links-visited"
