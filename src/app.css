@@ -109,16 +109,6 @@ html {
     padding: 3px 5px;
 }
 
-.about-us:hover,
-.contacts:hover,
-.login:hover {
-    border: 1px solid #000000;
-    background-color: #000000;
-    color: var(--3eme-color);
-    border-radius: 10px;
-    transition: 0.5s;
-}
-
 ul {
     list-style: none;
 }
@@ -147,15 +137,6 @@ ul {
     color: white;
     transition: 0.5s;
 }
-
-/* .title-marg:hover,
-.better:hover {
-    background-color: #cfcfcf;
-    color: #000000;
-    border-radius: 9px;
-    padding: 5px;
-    transform: scale(1.05, 1.05);
-} */
 
 a {
     text-decoration: none;

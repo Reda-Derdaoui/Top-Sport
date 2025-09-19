@@ -5,7 +5,7 @@ import { club } from "./clubDescriptions.js";
 
 //athletes
 let athleteElements = '';
-athletes.forEach((athlete) => {
+athletes.forEach(athlete => {
     athleteElements += `
         <div class="athelet-container">
             <div class="${athlete.parent}">
@@ -27,7 +27,7 @@ document.querySelector('.athelet-container').innerHTML = athleteElements;
 
 // kids anteractive 
 let kidsHTML = '';
-kids1.forEach((kid) => {
+kids1.forEach(kid => {
     kidsHTML += `
          <div class="kids-img js-kids-image">
             <img class="${kid.class}" src="${kid.image}">
@@ -36,7 +36,7 @@ kids1.forEach((kid) => {
 document.querySelector('.js-kids-image').innerHTML = kidsHTML;
 
 let kidsHTML2 = '';
-kids2.forEach((kid) => {
+kids2.forEach(kid => {
     kidsHTML2 += `
          <div class="kids-img js-kids-image">
             <img class="${kid.class}" src="${kid.image}">
@@ -47,7 +47,7 @@ document.querySelector('.js-kids2-image').innerHTML = kidsHTML2;
 
 // club descriptions
 let clubHTML = '';
-club.forEach((clubElements) => {
+club.forEach(clubElements => {
     clubHTML += `
         <div class="parent-4 js-club-descriptions">
             <div class="club-img-1">
