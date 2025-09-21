@@ -4,9 +4,8 @@ import { kids1, kids2 } from "./kids.js";
 import { club } from "./clubDescriptions.js";
 
 //athletes
-let athleteElements = '';
-athletes.forEach(athlete => {
-    athleteElements += `
+const athleteElements =  athletes.map(athlete => {
+    return `
         <div class="athelet-container">
             <div class="${athlete.parent}">
                <div>
@@ -25,19 +24,19 @@ athletes.forEach(athlete => {
 });
 document.querySelector('.athelet-container').innerHTML = athleteElements;
 
+
 // kids anteractive 
-let kidsHTML = '';
-kids1.forEach(kid => {
-    kidsHTML += `
+const kidsHTML = kids1.map(kid => {
+    return `
          <div class="kids-img js-kids-image">
             <img class="${kid.class}" src="${kid.image}">
         </div>`
 });
 document.querySelector('.js-kids-image').innerHTML = kidsHTML;
 
-let kidsHTML2 = '';
-kids2.forEach(kid => {
-    kidsHTML2 += `
+// let kidsHTML2 = '';
+ const  kidsHTML2 =  kids2.map(kid => {
+    return `
          <div class="kids-img js-kids-image">
             <img class="${kid.class}" src="${kid.image}">
         </div>`
@@ -46,9 +45,8 @@ document.querySelector('.js-kids2-image').innerHTML = kidsHTML2;
 
 
 // club descriptions
-let clubHTML = '';
-club.forEach(clubElements => {
-    clubHTML += `
+ const clubHTML = club.map(clubElements => {
+    return `
         <div class="parent-4 js-club-descriptions">
             <div class="club-img-1">
                 <img class="club-img" src="${clubElements.image}" alt="club">
