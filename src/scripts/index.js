@@ -3,8 +3,8 @@ import { athletes } from "./athletes.js";
 import { kids1, kids2 } from "./kids.js";
 import { club } from "./clubDescriptions.js";
 
-//athletes
-const athleteElements =  athletes.map(athlete => {
+
+const athleteElements = athletes.map(athlete => {
     return `
         <div class="athelet-container">
             <div class="${athlete.parent}">
@@ -22,30 +22,30 @@ const athleteElements =  athletes.map(athlete => {
         </div>       
     `
 });
-document.querySelector('.athelet-container').innerHTML = athleteElements;
+document.querySelector('.athelet-container').innerHTML = athleteElements.join('');
 
 
-// kids anteractive 
 const kidsHTML = kids1.map(kid => {
     return `
-         <div class="kids-img js-kids-image">
+        <div class="kids-img js-kids-image">
             <img class="${kid.class}" src="${kid.image}">
-        </div>`
+        </div>
+    `
 });
-document.querySelector('.js-kids-image').innerHTML = kidsHTML;
+document.querySelector('.js-kids-image').innerHTML = kidsHTML.join('');
 
-// let kidsHTML2 = '';
- const  kidsHTML2 =  kids2.map(kid => {
+
+const kidsHTML2 = kids2.map(kid => {
     return `
-         <div class="kids-img js-kids-image">
+        <div class="kids-img js-kids-image">
             <img class="${kid.class}" src="${kid.image}">
-        </div>`
+        </div>
+    `
 });
-document.querySelector('.js-kids2-image').innerHTML = kidsHTML2;
+document.querySelector('.js-kids2-image').innerHTML = kidsHTML2.join('');
 
 
-// club descriptions
- const clubHTML = club.map(clubElements => {
+const clubHTML = club.map(clubElements => {
     return `
         <div class="parent-4 js-club-descriptions">
             <div class="club-img-1">
@@ -55,5 +55,5 @@ document.querySelector('.js-kids2-image').innerHTML = kidsHTML2;
             </div>
         </div>   `
 });
-document.querySelector('.js-club-descriptions').innerHTML = clubHTML;
+document.querySelector('.js-club-descriptions').innerHTML = clubHTML.join('');
 
