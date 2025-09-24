@@ -25,24 +25,38 @@ const athleteElements = athletes.map(athlete => {
 document.querySelector('.athelet-container').innerHTML = athleteElements.join('');
 
 
-const kidsHTML = kids1.map(kid => {
-    return `
-        <div class="kids-img js-kids-image">
-            <img class="${kid.class}" src="${kid.image}">
-        </div>
-    `
-});
-document.querySelector('.js-kids-image').innerHTML = kidsHTML.join('');
+const kidItems = () => {
+    kids1.map(kid => {
+        const div = document.createElement('div');
+        div.className = 'js-kids-image';
 
+        const img1 = document.createElement('img');
+        img1.className = `${kid.class}`;
+        img1.src = `${kid.image}`;
 
-const kidsHTML2 = kids2.map(kid => {
-    return `
-        <div class="kids-img js-kids-image">
-            <img class="${kid.class}" src="${kid.image}">
-        </div>
-    `
-});
-document.querySelector('.js-kids2-image').innerHTML = kidsHTML2.join('');
+        div.appendChild(img1);
+
+        document.querySelector('.js-kids-image').appendChild(div);
+
+        console.log(div);
+    });
+
+    kids2.map(kid => {
+        const div = document.createElement('div');
+        div.className = 'js-kids-image';
+
+        const img1 = document.createElement('img');
+        img1.className = `${kid.class}`;
+        img1.src = `${kid.image}`;
+
+        div.appendChild(img1);
+
+        document.querySelector('.js-kids2-image').appendChild(div);
+
+        console.log(div);
+    });
+}
+kidItems();
 
 
 const clubHTML = club.map(clubElements => {
