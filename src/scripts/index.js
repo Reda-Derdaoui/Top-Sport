@@ -36,8 +36,6 @@ const kidItems = () => {
         div.appendChild(img1);
 
         document.querySelector('.js-kids-image').appendChild(div);
-
-        console.log(div);
     });
 
     kids2.map(kid => {
@@ -51,15 +49,12 @@ const kidItems = () => {
         div.appendChild(img1);
 
         document.querySelector('.js-kids2-image').appendChild(div);
-
-        console.log(div);
     });
 }
 kidItems();
 
 const clubHTML = () => {
     club.map(clubElement => {
-
         const div1 = document.createElement('div');
         div1.setAttribute('class', 'js-club-descriptions');
 
@@ -81,7 +76,6 @@ const clubHTML = () => {
 
         const p = document.createElement('p');
         p.setAttribute('class', 'p');
-
         p.appendChild(document.createTextNode(`${clubElement.description}`));
 
         div2.appendChild(p);
