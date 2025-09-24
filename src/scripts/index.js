@@ -3,7 +3,6 @@ import { athletes } from "./athletes.js";
 import { kids1, kids2 } from "./kids.js";
 import { club } from "./clubDescriptions.js";
 
-
 const athleteElements = athletes.map(athlete => {
     return `
         <div class="athelet-container">
@@ -58,16 +57,36 @@ const kidItems = () => {
 }
 kidItems();
 
+const clubHTML = () => {
+    club.map(clubElement => {
 
-const clubHTML = club.map(clubElements => {
-    return `
-        <div class="parent-4 js-club-descriptions">
-            <div class="club-img-1">
-                <img class="club-img" src="${clubElements.image}" alt="club">
-                <h2>${clubElements.title}</h2>
-                <p class="p">${clubElements.description}</p>
-            </div>
-        </div>   `
-});
-document.querySelector('.js-club-descriptions').innerHTML = clubHTML.join('');
+        const div1 = document.createElement('div');
+        div1.setAttribute('class', 'js-club-descriptions');
 
+        const div2 = document.createElement('div');
+        div2.setAttribute('class', 'club-img-1');
+
+        div1.appendChild(div2);
+
+        const img = document.createElement('img');
+        img.className = 'club-img';
+        img.src = `${clubElement.image}`;
+
+        div2.appendChild(img);
+
+        const h = document.createElement('h2');
+        h.appendChild(document.createTextNode(`${clubElement.title}`));
+
+        div2.appendChild(h);
+
+        const p = document.createElement('p');
+        p.setAttribute('class', 'p');
+
+        p.appendChild(document.createTextNode(`${clubElement.description}`));
+
+        div2.appendChild(p);
+
+        document.querySelector('.js-club-descriptions').appendChild(div1);
+    });
+}
+clubHTML();
