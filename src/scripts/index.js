@@ -36,12 +36,15 @@ const Title = () => {
     const h1 = document.createElement('h1');
     h1.setAttribute('class', 'title-marg');
     h1.appendChild(document.createTextNode('Marrakech Karate Club'));
+    h1.style.color = 'darkblue'
+
 
     div.appendChild(h1);
 
     const h2 = document.createElement('h2');
     h2.className = 'better';
     h2.style.textAlign = 'center';
+    h2.style.color = 'darkblue'
     h2.appendChild(document.createTextNode('A better place for learning a better karate skills'));
 
     div.appendChild(h2);
