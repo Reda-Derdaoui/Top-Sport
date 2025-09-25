@@ -26,11 +26,8 @@ const Top = document.getElementById('topHome');
 Top.addEventListener('click', () => {
     top.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
-
 Top.style.color = '#0b78d0';
 Top.style.cursor = 'pointer';
-
-
 
 
 const Title = () => {
