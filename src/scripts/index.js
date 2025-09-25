@@ -3,11 +3,39 @@ import { athletes } from "./athletes.js";
 import { kids1, kids2 } from "./kids.js";
 import { club } from "./clubDescriptions.js";
 
+const goTobutom = document.getElementById('aboutUs');
+const buttom = document.getElementById('botum');
+
+goTobutom.addEventListener('click', () => {
+    buttom.scrollIntoView({ behavior: 'smooth', block: 'center' });
+});
+goTobutom.style.cursor = 'pointer';
+
+
+const goTotop = document.getElementById('onTop');
+const top = document.getElementById('Top');
+
+goTotop.addEventListener('click', () => {
+    top.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
+goTotop.style.cursor = 'pointer';
+
+
+const Top = document.getElementById('topHome');
+
+Top.addEventListener('click', () => {
+    top.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
+
+Top.style.color = '#0b78d0';
+Top.style.cursor = 'pointer';
+
+
+
 
 const Title = () => {
-
     const div = document.createElement('div');
-    
+
     const h1 = document.createElement('h1');
     h1.setAttribute('class', 'title-marg');
     h1.appendChild(document.createTextNode('Marrakech Karate Club'));
@@ -16,6 +44,7 @@ const Title = () => {
 
     const h2 = document.createElement('h2');
     h2.className = 'better';
+    h2.style.textAlign = 'center';
     h2.appendChild(document.createTextNode('A better place for learning a better karate skills'));
 
     div.appendChild(h2);
@@ -23,11 +52,6 @@ const Title = () => {
     document.querySelector('.parent-2').appendChild(div);
 }
 Title();
-
-
-
-
-
 
 const athleteElements = athletes.map(athlete => {
     return `
