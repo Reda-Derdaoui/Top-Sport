@@ -3,6 +3,32 @@ import { athletes } from "./athletes.js";
 import { kids1, kids2 } from "./kids.js";
 import { club } from "./clubDescriptions.js";
 
+
+const Title = () => {
+
+    const div = document.createElement('div');
+    
+    const h1 = document.createElement('h1');
+    h1.setAttribute('class', 'title-marg');
+    h1.appendChild(document.createTextNode('Marrakech Karate Club'));
+
+    div.appendChild(h1);
+
+    const h2 = document.createElement('h2');
+    h2.className = 'better';
+    h2.appendChild(document.createTextNode('A better place for learning a better karate skills'));
+
+    div.appendChild(h2);
+
+    document.querySelector('.parent-2').appendChild(div);
+}
+Title();
+
+
+
+
+
+
 const athleteElements = athletes.map(athlete => {
     return `
         <div class="athelet-container">
