@@ -6,38 +6,38 @@ import { club } from "./clubDescriptions.js";
 const goTobutom = document.getElementById('aboutUs');
 const buttom = document.getElementById('botum');
 
-goTobutom.addEventListener('click', () => {
-    buttom.scrollIntoView({ behavior: 'smooth', block: 'center' });
-});
+goTobutom.addEventListener('click', () => buttomScroll());
 goTobutom.style.cursor = 'pointer';
-
 
 const goTotop = document.getElementById('onTop');
 const top = document.getElementById('Top');
 
-goTotop.addEventListener('click', () => {
-    top.scrollIntoView({ behavior: 'smooth', block: 'start' });
-});
+goTotop.addEventListener('click', () => topScroll());
 goTotop.style.cursor = 'pointer';
-
 
 const Top = document.getElementById('topHome');
 
-Top.addEventListener('click', () => {
-    top.scrollIntoView({ behavior: 'smooth', block: 'start' });
-});
+Top.addEventListener('click', () => topScroll());
 Top.style.color = '#0b78d0';
 Top.style.cursor = 'pointer';
 
+function topScroll() {
+    top.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    return;
+}
+
+function buttomScroll() {
+    buttom.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    return;
+}
 
 const Title = () => {
-    const div = document.createElement('div');
+    const div = creatDiv('Title');
 
     const h1 = document.createElement('h1');
     h1.setAttribute('class', 'title-marg');
     h1.appendChild(document.createTextNode('Marrakech Karate Club'));
     h1.style.color = 'darkblue'
-
 
     div.appendChild(h1);
 
@@ -76,27 +76,16 @@ document.querySelector('.athelet-container').innerHTML = athleteElements.join(''
 
 const kidItems = () => {
     kids1.map(kid => {
-        const div = document.createElement('div');
-        div.className = 'js-kids-image';
-
-        const img1 = document.createElement('img');
-        img1.className = `${kid.class}`;
-        img1.src = `${kid.image}`;
-
-        div.appendChild(img1);
-
+        const div = creatDiv('js-kids-image');
+        const image = creatImage(`${kid.class}`, `${kid.image}`);
+        div.appendChild(image);
         document.querySelector('.js-kids-image').appendChild(div);
     });
 
     kids2.map(kid => {
-        const div = document.createElement('div');
-        div.className = 'js-kids-image';
-
-        const img1 = document.createElement('img');
-        img1.className = `${kid.class}`;
-        img1.src = `${kid.image}`;
-
-        div.appendChild(img1);
+        const div = creatDiv('js-kids-image');
+        const image = creatImage(`${kid.class}`, `${kid.image}`);
+        div.appendChild(image);
 
         document.querySelector('.js-kids2-image').appendChild(div);
     });
@@ -105,19 +94,16 @@ kidItems();
 
 const clubHTML = () => {
     club.map(clubElement => {
-        const div1 = document.createElement('div');
-        div1.setAttribute('class', 'js-club-descriptions');
+        const div = creatDiv('js-club-descriptions');
 
         const div2 = document.createElement('div');
         div2.setAttribute('class', 'club-img-1');
 
-        div1.appendChild(div2);
+        div.appendChild(div2);
 
-        const img = document.createElement('img');
-        img.className = 'club-img';
-        img.src = `${clubElement.image}`;
+        const image = creatImage('club-img', `${clubElement.image}`)
 
-        div2.appendChild(img);
+        div2.appendChild(image);
 
         const h = document.createElement('h2');
         h.appendChild(document.createTextNode(`${clubElement.title}`));
@@ -130,7 +116,20 @@ const clubHTML = () => {
 
         div2.appendChild(p);
 
-        document.querySelector('.js-club-descriptions').appendChild(div1);
+        document.querySelector('.js-club-descriptions').appendChild(div);
     });
 }
 clubHTML();
+
+function creatImage(classes, src) {
+    const img1 = document.createElement('img');
+    img1.className = classes;
+    img1.src = src;
+    return img1;
+}
+
+function creatDiv(classes) {
+    const div = document.createElement('div');
+    div.className = classes;
+    return div;
+}
