@@ -73,7 +73,6 @@ const athleteElements = athletes.map(athlete => {
 });
 document.querySelector('.athelet-container').innerHTML = athleteElements.join('');
 
-
 const kidItems = () => {
     kids1.map(kid => {
         const div = creatDiv('js-kids-image');
@@ -96,8 +95,7 @@ const clubHTML = () => {
     club.map(clubElement => {
         const div = creatDiv('js-club-descriptions');
 
-        const div2 = document.createElement('div');
-        div2.setAttribute('class', 'club-img-1');
+        const div2 = creatDiv('club-img-1');
 
         div.appendChild(div2);
 
