@@ -4,18 +4,16 @@ import { kids1, kids2 } from "./kids.js";
 import { club } from "./clubDescriptions.js";
 
 const goTobutom = document.getElementById('aboutUs');
+const goTotop = document.getElementById('onTop');
+const Top = document.getElementById('topHome');
+const top = document.getElementById('Top');
 const buttom = document.getElementById('botum');
 
 goTobutom.addEventListener('click', () => buttomScroll());
 goTobutom.style.cursor = 'pointer';
 
-const goTotop = document.getElementById('onTop');
-const top = document.getElementById('Top');
-
 goTotop.addEventListener('click', () => topScroll());
 goTotop.style.cursor = 'pointer';
-
-const Top = document.getElementById('topHome');
 
 Top.addEventListener('click', () => topScroll());
 Top.style.color = '#0b78d0';
