@@ -65,7 +65,7 @@ html {
 /* ==================== THE HEADER  ==================== */
 
 .back-img {
-    background-image: url(./assets/club/cover-2-image.jpg);
+    background-image: url(./assets/athlete/karate-image.png);
     position: relative;
     background-attachment: fixed;
     background-repeat: none;
@@ -132,7 +132,7 @@ ul {
     font-size: 3rem;
     font-weight: 500;
     letter-spacing: var(--letter-spacing);
-    color: white;
+    color: #101113;
     transition: 0.5s;
 }
 
@@ -215,7 +215,7 @@ a {
 }
 
 .back-image-2 {
-    background-image: url(./assets/club/cover-image.jpg);
+    background-image: url(./assets/athlete/karate2-image.png);
     position: relative;
     background-attachment: fixed;
     background-repeat: none;
@@ -255,7 +255,8 @@ a {
 .first,
 .first-2,
 .first-3,
-.first-4 {
+.first-4,
+.first-5 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -263,7 +264,8 @@ a {
 }
 
 .first-2,
-.first-4 {
+.first-4,
+.first-5 {
     flex-direction: row-reverse;
 }
 
@@ -279,7 +281,8 @@ a {
 .reda,
 .hamza,
 .taha,
-.ayoub {
+.ayoub,
+.abderahim {
     display: flex;
     justify-items: center;
     flex-direction: column;

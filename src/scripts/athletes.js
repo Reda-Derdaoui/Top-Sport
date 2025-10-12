@@ -1,5 +1,14 @@
 export const athletes = [
     {
+        description: 'Balck belt (6eme Dan), he is the president and the owner  of the club Top Sport , he has a lot of champions national and international, also he was the coach of the Moroccan national team for many years. for more information about him visit his social media',
+        image: 'assets/athlete/abderahim-img.jpg',
+        name: 'Abderahim Derdaoui',
+        facebook: 'https://www.facebook.com/derdaoui.abderahim',
+        instagram: 'https://www.instagram.com/derdaouiabderahim',
+        class: 'abderahim',
+        parent: 'first-5'
+
+    }, {
         description: 'Balck belt (2eme Dan), champion of Morocco five times, and the third place at the karate1premier league 2016, he was a member of the Moroccan national team, and now his a coach in TOP SPORT CLUB .more information about him visit his social media.',
         image: 'assets/athlete/reda-photo.jpg',
         name: 'Reda Derdaoui',
