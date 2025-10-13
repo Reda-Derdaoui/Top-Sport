@@ -65,7 +65,7 @@ html {
 /* ==================== THE HEADER  ==================== */
 
 .back-img {
-    background-image: url(./assets/athlete/karate-image.png);
+    background-image: url(./assets/athlete/karate-image.jpg);
     position: relative;
     background-attachment: fixed;
     background-repeat: none;
@@ -215,7 +215,7 @@ a {
 }
 
 .back-image-2 {
-    background-image: url(./assets/athlete/karate2-image.png);
+    background-image: url(./assets/athlete/karate2-image.jpg);
     position: relative;
     background-attachment: fixed;
     background-repeat: none;
