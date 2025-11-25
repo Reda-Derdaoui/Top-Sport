@@ -40,12 +40,4 @@ export const athletes = [
         instagram: 'https://www.instagram.com/_ayoub_bouali_/',
         class: 'ayoub',
         parent: 'first-4'
-    },{
-        description: 'Black belt (2eme Dan), champion of Morocco, he has a multiples Moroccan regional championships and the Moroccan zone championships, and he is a karate coach. more information abou him visit his social media.',
-        image: 'assets/athlete/ayoub-photo.jpg',
-        name: 'Ayoub Bouali',
-        facebook: 'https://www.facebook.com/ayoub.bouali.95',
-        instagram: 'https://www.instagram.com/_ayoub_bouali_/',
-        class: 'ayoub',
-        parent: 'first-4'
     }]
