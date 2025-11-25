@@ -76,6 +76,8 @@ html {
 
 .parent-1 {
     display: flex;
+   /* position: sticky;
+    top:-10px;/**/
     justify-content: space-around;
     align-items: center;
     margin-bottom: 7rem;
